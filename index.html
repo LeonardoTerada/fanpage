@@ -4,34 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css">
-    <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .rotativa{
-            position: absolute;
-            width: 100%;
-        }
-        .comprar{
-            width: 200px;
-            height: 500px;
-            position: absolute;
-            margin-left: 70%;
-            background-color: aqua;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="preloader/preloader.css">
+    <title>Fanpage</title>
 </head>
 <body>
-    <div>
+    
+    <div class="principal">
+    
+    <div class="bcomprar">
+        <div class="botoes">
+        <div class="comprar">
+            <img src="imagens/carrinho.png">
+            <p>comprar</p>
+        </div>
+        <div class="renovar">
+            <img src="imagens/renovar.png">
+            <p>renovar</p></div></div>
+       
+           
+           <div class="precoscomprar">
+               <div class="cert">
+            <p> - selecione seu certificado:</p>
+        </div>
+            <input type="radio" name="tipocertificado" class="ecpf" id="tab1" checked><label  for="tab1" class="textecpf"  onclick="ecpf()">e-CPF</label>
+            <input type="radio" name="tipocertificado" class="ecnpj" id="tab2"><label  for="tab2" class="textecnpj" onclick="ecnpj()">e-CNPJ</label>
+            <input type="radio" name="tipocertificado" class="nfe" id="tab3"><label  for="tab3" class="textnfe" onclick="nfe()">NF-e</label>
+        </div>
+        <div class="ecpf2" >
+           <p> - selecione seu dispositivo:</p>
+           
+        </div>
+        <div class="ecnpj2">
+            <p> - selecione seu dispositivo:</p>
+            
+         </div>
+         <div class="nfe2">
+            <p> - selecione seu dispositivo:</p>
         
-        <img src="" alt="" class="rotativa" >
-    <div class="comprar">
+         </div>
+        </ul>            validade
 
+
+    
     </div>    
     </div>
+   
+    
+
     <script src="funcoes.js"></script>
+    <script src="valores.js"></script>
+    
+
+
 </body>
 </html>

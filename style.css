@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Open_Sans;
+    src: url(Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+}
+.principal{
+background-image: url(foto1.png);
+background-size: cover;
+width: 100%;
+height: 650px;
+padding-top: 30px;
+}
+.rotativa{
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+.bcomprar{
+    width:450px;
+    height: 550px;
+    background-color: aqua;
+    margin-left:55%;
+    border-radius: 20px;
+}
+.comprar{
+    width: 50%;
+    height: 50px;
+    border-right: solid 1px white;
+    border-radius: 20px 0px 0px 0px;
+    background-color: #813274;
+    display: flex;
+    flex-direction: row;
+}
+.comprar img,.renovar img{
+    margin-left: 30px;
+    margin-top: 5px;
+   
+}
+.comprar p, .renovar p{
+    font-family: Open_Sans;
+    color :white;
+    font-size: 25px;
+    background-color: #813274;
+    margin-top: 10px;
+}
+.comprar:hover, .renovar:hover{
+    cursor: pointer;
+}
+.renovar{
+    width: 50%;
+    height: 50px;
+    border-radius: 0px 20px 0px 0px;
+    background-color: #813274;
+    display: flex;
+    flex-direction: row;
+}
+.botoes{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #813274;
+}
+.precoscomprar{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center   ;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.textecpf, .textecnpj, .textnfe{
+    width: 80px;
+    height: 25px;
+    font-family: Open_Sans ;
+    color: #813274;
+    background-color: #F2F2F2;
+    border: solid 1px #813274;
+    text-align: center;
+    border-radius: 20px;
+}
+.ecpf:checked ~ .textecpf{
+    background-color: #813274;
+    color: white;
+}
+.ecnpj:checked ~ .textecnpj{
+    background-color: #813274;
+    color: white;
+}
+.nfe:checked ~ .textnfe{
+    background-color: #813274;
+    color: white;
+}
+input{
+    display: none;
+}
+.cert{
+    width: 100%;
+    color: #813274;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-family: Open_Sans;
+    font-weight: bold;
+}
+.ecnpj2, .nfe2{
+    display: none;
+}
