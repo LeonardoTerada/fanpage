@@ -22,14 +22,14 @@ padding-top: 30px;
 .bcomprar{
     width:450px;
     height: 550px;
-    background-color: aqua;
+    background-color: #F2F2F2 ;
     margin-left:55%;
     border-radius: 20px;
 }
 .comprar{
     width: 50%;
     height: 50px;
-    border-right: solid 1px white;
+    border-right: solid 1px #F2F2F2;
     border-radius: 20px 0px 0px 0px;
     background-color: #813274;
     display: flex;
@@ -64,7 +64,7 @@ padding-top: 30px;
     border-radius: 20px 20px 0px 0px;
     background-color: #813274;
 }
-.precoscomprar{
+.precoscomprar,.ecnpj2,.ecpf2,.nfe2,.validade1, .validade2,.validade3,.validade4{
     width: 100%;
     height: 20%;
     display: flex;
@@ -82,16 +82,62 @@ padding-top: 30px;
     border: solid 1px #813274;
     text-align: center;
     border-radius: 20px;
+    cursor: pointer;
 }
-.ecpf:checked ~ .textecpf{
+.arqtxt1,.cartxt1,.kittxt1,.toktxt1{
+    width: 80px;
+    font-family: Open_Sans ;
+    color: #813274;
+    background-color: #F2F2F2;
+    border: solid 1px #813274;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 12px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.arqtxt2,.cartxt2,.kittxt2,.toktxt2{
+    width: 80px;
+    font-family: Open_Sans ;
+    color: #813274;
+    background-color: #F2F2F2;
+    border: solid 1px #813274;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 12px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.arqtxt3,.cartxt3,.kittxt3,.toktxt3{
+    width: 80px;
+    font-family: Open_Sans ;
+    color: #813274;
+    background-color: #F2F2F2;
+    border: solid 1px #813274;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 12px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+
+.arquivo1:checked ~ .arqtxt1,.cartao1:checked ~ .cartxt1 ,.kit1:checked ~ .kittxt1,.token1:checked ~.toktxt1{
     background-color: #813274;
     color: white;
 }
-.ecnpj:checked ~ .textecnpj{
+
+.arquivo2:checked ~ .arqtxt2,.cartao2:checked ~ .cartxt2 ,.kit2:checked ~ .kittxt2,.token2:checked ~.toktxt2{
     background-color: #813274;
     color: white;
 }
-.nfe:checked ~ .textnfe{
+.arquivo3:checked ~ .arqtxt3,.cartao3:checked ~ .cartxt3 ,.kit3:checked ~ .kittxt3,.token3:checked ~.toktxt3{
+    background-color: #813274;
+    color: white;
+}
+
+
+.nfe:checked ~ .textnfe,.ecnpj:checked ~ .textecnpj,.ecpf:checked ~ .textecpf{
     background-color: #813274;
     color: white;
 }
@@ -99,13 +145,37 @@ input{
     display: none;
 }
 .cert{
-    width: 100%;
+    width: 90%;
     color: #813274;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-bottom: 20px;
     font-family: Open_Sans;
     font-weight: bold;
+    flex-wrap: wrap;
 }
 .ecnpj2, .nfe2{
+    display: none;
+}
+
+
+
+/*validade ecpf*/
+.val12txt{
+width: 80px;
+    font-family: Open_Sans ;
+    color: #813274;
+    background-color: #F2F2F2;
+    border: solid 1px #813274;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 12px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.val12:checked ~ .val12txt{
+    color: white;
+    background-color: #813274;
+}
+.validade1, .validade2,.validade3,.validade4{
     display: none;
 }
