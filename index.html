@@ -27,85 +27,36 @@
                <div class="cert">
             <p> - selecione seu certificado:</p>
         </div>
-            <input type="radio" name="tipocertificado" class="ecpf" id="tab1" checked><label  for="tab1" class="textecpf"  onclick="ecpf()">e-CPF</label>
-            <input type="radio" name="tipocertificado" class="ecnpj" id="tab2"><label  for="tab2" class="textecnpj" onclick="ecnpj()">e-CNPJ</label>
-            <input type="radio" name="tipocertificado" class="nfe" id="tab3"><label  for="tab3" class="textnfe" onclick="nfe()">NF-e</label>
+        <input type="radio" name="tipocertificado" class="ecnpj" id="tab2" checked><label  for="tab2" class="textecnpj" >e-CNPJ</label>
+
+            <input type="radio" name="tipocertificado" class="ecpf" id="tab1" ><label  for="tab1" class="textecpf"  >e-CPF</label>
+
+            
+
+            <input type="radio" name="tipocertificado" class="nfe" id="tab3"><label  for="tab3" class="textnfe">NF-e</label>
         </div>
 
-        
+<!--divisoria de dispositivo-->       
         <div class="ecpf2" >
             <div class="cert">
            <p> - selecione seu dispositivo:</p>
         </div>
-           <input type="radio" name="cpfdis" class="arquivo1" id="tab4" ><label for="tab4" class="arqtxt1" onclick="valEcpfA1()">A1 - Arquivo</label>
-            <input type="radio" name="cpfdis" class="cartao1"id="tab5"><label for="tab5" class="cartxt1" onclick="valEcpfA12()">A3 - Cartão</label>
-           <input type="radio" name="cpfdis" class="kit1" id="tab6"><label for="tab6" class="kittxt1" onclick="valEcpfA13()">A3 - Kit Leitora</label>
-           <input type="radio" name="cpfdis" class="token1"id="tab7"><label for="tab7" class="toktxt1" onclick="valEcpfA14()">A3 - Token</label>
+           <input type="radio" name="cpfdis" class="arquivo1" id="tab4" checked><label for="tab4" class="arqtxt1" >A1 - Arquivo</label>
+
+            <input type="radio" name="cpfdis" class="cartao1"id="tab5"><label for="tab5" class="cartxt1" >A3 - Cartão</label>
+           <input type="radio" name="cpfdis" class="kit1" id="tab6"><label for="tab6" class="kittxt1" >A3 - Kit Leitora</label>
+           <input type="radio" name="cpfdis" class="token1"id="tab7"><label for="tab7" class="toktxt1" >A3 - Token</label>
 
         </div>
 
 
-
-        <div class="ecnpj2">
-            <div class="cert">
-                <p> - selecione seu dispositivo:</p>
-             </div>
-             <input type="radio" name="cnpjdis" class="arquivo2" id="tab8" ><label for="tab8" class="arqtxt2">A1 - Arquivo</label>
-             <input type="radio" name="cnpjdis" class="cartao2"id="tab9"><label for="tab9" class="cartxt2">A3 - Cartão</label>
-            <input type="radio" name="cnpjdis" class="kit2" id="tab10"><label for="tab10" class="kittxt2">A3 - Kit Leitora</label>
-            <input type="radio" name="cnpjdis" class="token2"id="tab11"><label for="tab11" class="toktxt2">A3 - Token</label>
-        </div>
-
-
-
-
-         <div class="nfe2">
-            <div class="cert">
-                <p> - selecione seu dispositivo:</p>
-             </div>
-             <input type="radio" name="nfedis" class="arquivo3" id="tab12" >  <label for="tab12" class="arqtxt3">A1 - Arquivo</label>
-             <input type="radio" name="nfedis" class="cartao3"id="tab13">     <label for="tab13" class="cartxt3">A3 - Cartão</label>
-            <input type="radio" name="nfedis" class="kit3" id="tab14">       <label for="tab14" class="kittxt3">A3 - Kit Leitora</label>
-            <input type="radio" name="nfedis" class="token3"id="tab15">      <label for="tab15" class="toktxt3">A3 - Token</label>
-     
-        </div>
-
-
-        <div class="validade1">
+        <div class="validade">
             <div class="cert">
                 <p> - selecione a validade:</p>
              </div>
-                          <input type="radio" name="val12" class="val12" id="tab16" >  <label for="tab16" class="val12txt">12 Meses</label>
-
-     
-        </div>
-        <div class="validade2">
-            <div class="cert">
-                <p> - selecione a validade:</p>
-             </div>
-                          <input type="radio" name="val12" class="val12" id="tab17" >  <label for="tab17" class="val12txt">12 Meses</label>
-                          <input type="radio" name="val12" class="val12" id="tab18" >  <label for="tab18" class="val12txt">24 Meses</label>
-                          <input type="radio" name="val12" class="val12" id="tab19" >  <label for="tab19" class="val12txt">36 Meses</label>
-     
-        </div>
-
-        <div class="validade3">
-            <div class="cert">
-                <p> - selecione a validade:</p>
-             </div>
-             <input type="radio" name="val12" class="val12" id="tab17" >  <label for="tab17" class="val12txt">12 Meses</label>
-             <input type="radio" name="val12" class="val12" id="tab18" >  <label for="tab18" class="val12txt">24 Meses</label>
-             <input type="radio" name="val12" class="val12" id="tab19" >  <label for="tab19" class="val12txt">36 Meses</label>
-     
-        </div>
-
-        <div class="validade4">
-            <div class="cert">
-                <p> - selecione a validade:</p>
-             </div>
-             <input type="radio" name="val12" class="val12" id="tab17" >  <label for="tab17" class="val12txt">12 Meses</label>
-             <input type="radio" name="val12" class="val12" id="tab18" >  <label for="tab18" class="val12txt">24 Meses</label>
-             <input type="radio" name="val12" class="val12" id="tab19" >  <label for="tab19" class="val12txt">36 Meses</label>
+                          <input type="radio" name="val" class="val1" id="tab8" checked>  <label for="tab8" class="val1txt">12 Meses</label>
+                          <input type="radio" name="val" class="val2" id="tab9" >  <label for="tab9" class="val2txt">24 Meses</label>
+                          <input type="radio" name="val" class="val3" id="tab10" >  <label for="tab10" class="val3txt">36 Meses</label>
      
         </div>
 
@@ -118,12 +69,20 @@
 
 
 
-
-
+<!--divisoria de preços-->
+<!--preços ecpf-->
 <div class="mensagem">
-    <label></label>
+    <div class="precos">
+    <p class="dep"> de R$</p>
+    <p class="valor">R$ 206,10</p>
+        <P class="parcela">12X de R$17,18</P>
 </div>
 
+<div class="botao"><a class="link" href="" target="blank">
+<p>comprar certificado</p>
+</a></div>
+</div>
+<!--preços ecnpj-->
 
     
     </div>
@@ -138,4 +97,4 @@
 
 
 </body>
-</html>
+</html> 

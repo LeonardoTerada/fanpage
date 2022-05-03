@@ -5,7 +5,7 @@
 *{
     padding: 0;
     margin: 0;
-    background-color: aliceblue;
+    background-color: #F2F2F2;
 }
 .principal{
 background-image: url(foto1.png);
@@ -64,7 +64,7 @@ padding-top: 30px;
     border-radius: 20px 20px 0px 0px;
     background-color: #813274;
 }
-.precoscomprar,.ecnpj2,.ecpf2,.nfe2,.validade1, .validade2,.validade3,.validade4{
+.precoscomprar,.ecnpj2,.ecpf2,.nfe2,.validade{
     width: 100%;
     height: 20%;
     display: flex;
@@ -96,46 +96,12 @@ padding-top: 30px;
     padding-top: 10px;
     cursor: pointer;
 }
-.arqtxt2,.cartxt2,.kittxt2,.toktxt2{
-    width: 80px;
-    font-family: Open_Sans ;
-    color: #813274;
-    background-color: #F2F2F2;
-    border: solid 1px #813274;
-    text-align: center;
-    border-radius: 20px;
-    font-size: 12px;
-    padding-top: 10px;
-    cursor: pointer;
-}
-.arqtxt3,.cartxt3,.kittxt3,.toktxt3{
-    width: 80px;
-    font-family: Open_Sans ;
-    color: #813274;
-    background-color: #F2F2F2;
-    border: solid 1px #813274;
-    text-align: center;
-    border-radius: 20px;
-    font-size: 12px;
-    padding-top: 10px;
-    cursor: pointer;
-}
 
 
 .arquivo1:checked ~ .arqtxt1,.cartao1:checked ~ .cartxt1 ,.kit1:checked ~ .kittxt1,.token1:checked ~.toktxt1{
     background-color: #813274;
     color: white;
 }
-
-.arquivo2:checked ~ .arqtxt2,.cartao2:checked ~ .cartxt2 ,.kit2:checked ~ .kittxt2,.token2:checked ~.toktxt2{
-    background-color: #813274;
-    color: white;
-}
-.arquivo3:checked ~ .arqtxt3,.cartao3:checked ~ .cartxt3 ,.kit3:checked ~ .kittxt3,.token3:checked ~.toktxt3{
-    background-color: #813274;
-    color: white;
-}
-
 
 .nfe:checked ~ .textnfe,.ecnpj:checked ~ .textecnpj,.ecpf:checked ~ .textecpf{
     background-color: #813274;
@@ -153,29 +119,80 @@ input{
     font-weight: bold;
     flex-wrap: wrap;
 }
-.ecnpj2, .nfe2{
-    display: none;
-}
+
 
 
 
 /*validade ecpf*/
-.val12txt{
-width: 80px;
+.val1txt,.val2txt,.val3txt{
+    width: 80px;
     font-family: Open_Sans ;
     color: #813274;
     background-color: #F2F2F2;
     border: solid 1px #813274;
-    text-align: center;
+    padding: 10px;
     border-radius: 20px;
     font-size: 12px;
-    padding-top: 10px;
     cursor: pointer;
 }
-.val12:checked ~ .val12txt{
+.val1:checked ~ .val1txt,.val2:checked ~ .val2txt,.val3:checked ~ .val3txt{
     color: white;
     background-color: #813274;
 }
-.validade1, .validade2,.validade3,.validade4{
-    display: none;
+
+/*mensagem */
+.mensagem{
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    border-radius: 20px 20px 20px 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.precos{
+    width: 50%;
+    padding-top: 10%;
+    background-color: #F2F2F2;
+}
+.dep{
+    margin-left: 10%;
+    font-family: Opens_Sans;
+    font-size: 17px;
+    color: #813274;
+}
+.valor{
+    margin-left: 10%;
+    font-family: Opens_Sans;
+    font-size: 35px;
+    font-weight:bolder ;
+    color: #813274;
+
+}
+.parcela{
+    margin-left: 10%;
+    font-family: Opens_Sans;
+    font-size: 15px;
+    font-weight:bold ;
+    color: #813274;
+}
+.botao{
+    background-color: #813274;
+    width: 40%;
+    margin-left: 10%;
+    height: 30px;
+    margin-top: 40%;
+    border-radius: 5px 5px 5px  5px ;
+    padding-top: 7px;
+    text-align: center;
+}
+    
+.botao p{
+    font-family: Opens_Sans;
+    font-weight: 300;
+    font-size: 17px;
+    color: white;
+    background-color: #813274;
+    
 }
